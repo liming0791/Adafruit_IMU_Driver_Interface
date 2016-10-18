@@ -1,0 +1,4 @@
+<launch>
+  <rosparam command="load" file="$(find imu_adafruit10dof)/cfg/calibration.yaml" />
+  <node pkg="imu_adafruit10dof" type="imu_node" name="imu" />
+</launch>
